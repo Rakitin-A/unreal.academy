@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    font-size: 16px;
+    line-height: 19px;
+    color: $default;
+    @extend %inter-400;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// a{
+//     font-size: 16px;
+//     line-height: 26px;
+//     color: $default;
+//     @extend %quicksand-500;
+// }
+
+.title {
+    text-align: center;
+    @extend %inter-700;
+    font-size: 40px;
+    line-height: 48px;
+    color: $title;
+}
+.title-bg{
+    text-align: center;
+    @extend %inter-700;
+    font-size: 40px;
+    line-height: 48px; 
+    color: $default;
+}
+
+.btn {
+    font-size: 16px;
+    line-height: 19px;
+    @extend %inter-600;
+    color: $title;
+    padding: 15px 23px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid $title;
+    border-radius: 4px;
+}
+ .bg{
+    background-color: $default;
+ }

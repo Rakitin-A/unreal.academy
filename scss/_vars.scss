@@ -1,0 +1,47 @@
+$accent: #E7E7FF;
+$default: #3E416D;
+$title: #FFFFFF;
+$bg:#8482FF;
+
+$yellow: #ffd300;
+$blue: #17d3ff;
+$pink: #ff4e91;
+
+
+%inter-400{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+%inter-600{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+%inter-500{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+%inter-700{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+%inter-800{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+$duration: 1000;
+
+@function randomNum($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+    @return $randomNum;
+}
